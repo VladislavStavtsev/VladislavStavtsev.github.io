@@ -33,7 +33,7 @@
 		<p>Элемент <code>img</code> внедряет изображение в текущий документ в месте определения элемента. Элемент <code>img</code> не имеет содержимого — он замещается на ходу изображением, указанным в атрибуте <code>src</code>.</p>
 		
 		<figure>
-			<img src="lab1/images/html5-logo.png" alt="Логотип HTML5" width="200">
+			<img src="images/html5-logo.png" alt="Логотип HTML5" width="200">
 			<figcaption>Пример простого изображения с логотипом HTML5</figcaption>
 		</figure>
 
@@ -41,7 +41,7 @@
 		<p>Атрибут <code>alt</code> предоставляет краткое описание изображения. Он содержит альтернативный текст, который отображается, если изображение не может быть выведено. Пользовательские агенты должны отображать альтернативный текст, если они не поддерживают изображения, или сконфигурированы так, чтобы не показывать изображения (отключен показ изображений).</p>
 		
 		<figure>
-			<img src="lab1/images/html5-logo.svg" alt="Логотип HTML в векторном формате SVG" width="150">
+			<img src="images/html5-logo.svg" alt="Логотип HTML в векторном формате SVG" width="150">
 			<figcaption>Векторное изображение в формате SVG с альтернативным текстом</figcaption>
 		</figure>
 
@@ -51,7 +51,7 @@
 		При указании обоих атрибутов ПА «впишет» изображение в область с указанными размерами.</p>
 		
 		<figure>
-			<img src="lab1/images/mushroom.jpg" alt="Гриб" width="300" height="200">
+			<img src="images/mushroom.jpg" alt="Гриб" width="300" height="200">
 			<figcaption>Изображение с фиксированными размерами 300x200px</figcaption>
 		</figure>
 		
@@ -62,8 +62,8 @@
 		Атрибут <code>srcset</code> задаёт путь к графическим файлам с учётом размера изображения и устройств.</p>
 		
 		<figure>
-			<img src="lab1/images/mushroom_retina.jpg" 
-				 srcset="lab1/images/mushroom.jpg 1x, lab1/images/mushroom_retina.jpg 2x" 
+			<img src="images/mushroom_retina.jpg" 
+				 srcset="images/mushroom.jpg 1x, images/mushroom_retina.jpg 2x" 
 				 alt="Гриб для Retina дисплеев">
 			<figcaption>Изображение с поддержкой Retina дисплеев</figcaption>
 		</figure>
@@ -75,7 +75,7 @@
 		Элемент <code>figcaption</code> содержит описание для элемента <code>figure</code>. Он должен быть первым или последним элементом в группе.</p>
 		
 		<figure>
-			<img src="lab1/images/aquaria.jpg" alt="Аквариум с рыбками">
+			<img src="images/aquaria.jpg" alt="Аквариум с рыбками">
 			<figcaption>Пример элемента figure с подписью - аквариум с разноцветными рыбками</figcaption>
 		</figure>
 
@@ -91,17 +91,17 @@
 		
 		<figure>
 			<picture>
-				<source media="(orientation: portrait)" srcset="lab1/images/mushroom_portrait.jpg">
-				<source media="(orientation: landscape)" srcset="lab1/images/mushroom_landscape.jpg">
-				<img src="lab1/images/mushroom.jpg" alt="Гриб в зависимости от ориентации экрана">
+				<source media="(orientation: portrait)" srcset="images/mushroom_portrait.jpg">
+				<source media="(orientation: landscape)" srcset="images/mushroom_landscape.jpg">
+				<img src="images/mushroom.jpg" alt="Гриб в зависимости от ориентации экрана">
 			</picture>
 			<figcaption>Пример элемента picture с выбором изображения по ориентации устройства</figcaption>
 		</figure>
 		
 		<figure>
 			<picture>
-				<source srcset="lab1/images/light.gif" media="(prefers-reduced-motion: no-preference)">
-				<img src="lab1/images/globus.gif" alt="Анимированный глобус или статичное изображение">
+				<source srcset="images/light.gif" media="(prefers-reduced-motion: no-preference)">
+				<img src="images/globus.gif" alt="Анимированный глобус или статичное изображение">
 			</picture>
 			<figcaption>Пример адаптации к настройкам анимации в системе</figcaption>
 		</figure>
