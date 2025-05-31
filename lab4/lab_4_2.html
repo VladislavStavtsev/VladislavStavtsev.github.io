@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: sans-serif;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .menu li {
+        margin-bottom: 5px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #0066cc;
+        /* Цвет ссылок */
+        display: block;
+        padding: 5px 10px;
+    }
+
+    .menu a:hover {
+        background-color: #f0f0f0;
+        /* Цвет фона при наведении */
+    }
+
+    .submenu {
+        display: none;
+        margin-left: 20px;
+    }
+
+    .menu li:hover>.submenu {
+        display: block;
+    }
+
+    /* Стиль для плюсика/минуса */
+    .menu-toggle:before {
+        content: "[-] ";
+        /* Default: minus sign */
+    }
+
+    .menu li:hover>a.menu-toggle:before {
+        content: "[+] ";
+        /* Change to plus sign on hover */
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#" class="menu-toggle">Фильмы</a>
+                <ul class="submenu">
+                    <li><a href="#">Экшн</a></li>
+                    <li><a href="#">Мелодрамы</a></li>
+                    <li><a href="#">Сериалы</a></li>
+                    <li><a href="#">Семейные</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="menu-toggle">Музыка</a>
+                <ul class="submenu">
+                    <li><a href="#">Классика</a></li>
+                    <li><a href="#">Джаз</a></li>
+                    <li><a href="#">Рок</a></li>
+                    <li><a href="#">Грандж</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="menu-toggle">Софт</a>
+                <ul class="submenu">
+                    <li><a href="#">Графика</a></li>
+                    <li><a href="#">3D-моделирование</a></li>
+                    <li><a href="#">Машинопись</a></li>
+                    <li><a href="#">Переводчики</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="menu-toggle">Игры</a>
+                <ul class="submenu">
+                    <li><a href="#">РПГ</a></li>
+                    <li><a href="#">Шутеры</a></li>
+                    <li><a href="#">Пасьянсы</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
