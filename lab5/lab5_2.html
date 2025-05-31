@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+
+            margin-bottom: 20px;
+
+        }
+
+        .column {
+            box-sizing: border-box;
+
+            padding: 10px;
+            text-align: center;
+            font-family: sans-serif;
+            color: black;
+            border: 1px solid #ccc;
+
+        }
+
+        .left1 {
+            min-width: 200px;
+            background-color: lightblue;
+        }
+
+        .center1 {
+            max-width: 600px;
+            background-color: lightgreen;
+        }
+
+        .right1 {
+            min-width: 200px;
+            background-color: lightcoral;
+        }
+
+        .left {
+            width: 200px;
+            background-color: lightblue;
+        }
+
+        .center {
+            width: 600px;
+            background-color: lightgreen;
+        }
+
+        .right {
+            width: 200px;
+            background-color: lightcoral;
+        }
+
+
+
+        .inline-block .container {
+            display: block;
+
+        }
+
+        .inline-block .column {
+            display: inline-block;
+            vertical-align: top;
+
+            width: auto;
+
+        }
+
+
+        .grid .container {
+            display: grid;
+            grid-template-columns: 200px 600px 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>1. Inline-block Layout</h2>
+    <div class="inline-block">
+        <div class="container">
+            <div class="column left1">
+                left
+                <br>left
+                <br>left
+                <br>left
+                <br>left
+            </div>
+            <div class="column center1">
+                center text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text
+            </div>
+            <div class="column right1">
+                right
+                <br>right
+                <br>right
+                <br>right
+                <br>right
+            </div>
+        </div>
+    </div>
+
+    <h2>2. Flexbox Layout</h2>
+    <div class="flex">
+        <div class="container">
+            <div class="column left">
+                left
+                <br>left
+                <br>left
+                <br>left
+                <br>left
+            </div>
+            <div class="column center">
+                center text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text
+            </div>
+            <div class="column right">
+                right
+                <br>right
+                <br>right
+                <br>right
+                <br>right
+            </div>
+        </div>
+    </div>
+
+    <h2>3. Grid Layout</h2>
+    <div class="grid">
+        <div class="container">
+            <div class="column left">
+                left
+                <br>left
+                <br>left
+                <br>left
+                <br>left
+            </div>
+            <div class="column center">
+                center text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text
+            </div>
+            <div class="column right">
+                right
+                <br>right
+                <br>right
+                <br>right
+                <br>right
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
