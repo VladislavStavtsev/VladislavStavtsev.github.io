@@ -1,5 +1,5 @@
 body {
-    background-image: url("pattern.svg");
+    background-image: url("pattern-waved-rope.svg");
     background-size: cover;
     background-repeat: no-repeat;
     color: #333; 
@@ -26,8 +26,7 @@ body {
     border: 5px solid #ddd;
     border-radius: 10px;
     margin: 20px auto; 
-    padding: 15px;
-    background-color: #f9f9f9; 
+    padding: 15px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     max-width: 800px; 
   }
