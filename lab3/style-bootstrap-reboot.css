@@ -2,8 +2,6 @@
 
 body {
     background-image: url("pattern-waved-rope.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
     color: #333; 
     font-family: 'Roboto', sans-serif; 
     margin: 0; 
